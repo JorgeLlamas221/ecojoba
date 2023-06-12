@@ -7,7 +7,7 @@ VALUES(null,'".$_POST["nombreCompleto"]."','".$_POST["correoElectronico"]."','".
 $res = mysqli_query($conexion,$sql) or die("Error Al Momento De Almacenar La informacion En La Base De Datos");
 
 mysqli_close($conexion);
-
+// Imprimir Datos Ingresador En El Formulario Por El Usuario
 echo 'Datos Ingresador Por El Usuario:'.'<br>';
 echo 'Nombre Completo: ' .$_POST["nombreCompleto"].'<br>';
 echo 'Correo Electronico: ' .$_POST["correoElectronico"].'<br>';
